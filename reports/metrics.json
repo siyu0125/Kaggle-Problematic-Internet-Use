@@ -1,0 +1,29 @@
+{
+  "tabular-only": {
+    "oof_qwk": {
+      "lgb": 0.4469896080775734,
+      "xgb": 0.4474779928777559,
+      "cat": 0.4590519396299291
+    },
+    "ensemble_qwk": 0.45824763804466484
+  },
+  "tabular+actigraphy": {
+    "oof_qwk": {
+      "lgb": 0.4493970677539689,
+      "xgb": 0.45021889366454915,
+      "cat": 0.45425121608312213
+    },
+    "ensemble_qwk": 0.45181704243083565
+  },
+  "best": "tabular-only:cat",
+  "best_qwk": 0.4590519396299291,
+  "final": {
+    "model": "OOF-weighted blend (cat0.59/lgb0.21/xgb0.20; cat uses pseudo-labeling)",
+    "oof_qwk": 0.46225644113725317,
+    "components": {
+      "cat_pseudo": 0.4612,
+      "lgb_plain": 0.447,
+      "xgb_plain": 0.4475
+    }
+  }
+}
